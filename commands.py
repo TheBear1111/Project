@@ -4,6 +4,17 @@ from lists import *
 import discord
 import random
 import os
+from flask import Flask
+from threading import Thread
+
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is running"
+
+def run_web(app.run(host='0.0.0.0, port=8080)
 
 TOKEN = os.getenv('TOKEN')
 
@@ -165,7 +176,7 @@ async def on_message(message):
         await message.channel.purge(limit=1)
 
 
-
+Thread(target=run_web).start()
 bot.run(TOKEN)
 
-client.run(TOKEN)
+
