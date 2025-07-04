@@ -19,6 +19,12 @@ def run_web():
 
 TOKEN = os.getenv('TOKEN')
 
+if TOKEN:
+    print('HELL YEAH!')
+else:
+    print('HELL NAH SON!')
+    exit(1)
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
