@@ -3,7 +3,11 @@ from discord.ext import commands
 from lists import *
 import discord
 import random
-import sqlite3
+from dotenv import dotenv as dot
+import os
+
+dot()
+TOKEN = os.getenv('TOKEN')
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -164,6 +168,6 @@ async def on_message(message):
 
 
 
-bot.run('MTEwMTY5NTE2NTgzMzQyNDk4Nw.GcETl1._o5R6JWGNpB2tSqInC-abzLJQHt_E3Rrf-2iIs')
+bot.run(TOKEN)
 
-client.run('MTEwMTY5NTE2NTgzMzQyNDk4Nw.GcETl1._o5R6JWGNpB2tSqInC-abzLJQHt_E3Rrf-2iIs')
+client.run(TOKEN)
