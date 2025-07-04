@@ -14,7 +14,8 @@ app = Flask('')
 def home():
     return "Bot is running"
 
-def run_web(app.run(host='0.0.0.0', port=8080)
+def run_web():
+    app.run(host='0.0.0.0', port=8080)
 
 TOKEN = os.getenv('TOKEN')
 
