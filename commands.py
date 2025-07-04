@@ -3,10 +3,8 @@ from discord.ext import commands
 from lists import *
 import discord
 import random
-from dotenv import load_dotenv as dot
 import os
 
-dot()
 TOKEN = os.getenv('TOKEN')
 
 intents = discord.Intents.default()
