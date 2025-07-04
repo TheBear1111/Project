@@ -3,7 +3,7 @@ from discord.ext import commands
 from lists import *
 import discord
 import random
-from dotenv import dotenv as dot
+from dotenv import load_dotenv as dot
 import os
 
 dot()
