@@ -130,7 +130,7 @@ async def cheese(ctx):
 
 @bot.command()
 async def purge(ctx, amount=1):
-    if ctx.author.id == senorratboi:  # Replace with your actual Discord user ID
+    if ctx.author.id == 'senorratboi':  # Replace with your actual Discord user ID
         await ctx.channel.purge(limit=amount)
     else:
         await ctx.send("You are not worthy. >_>")
